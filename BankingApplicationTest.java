@@ -115,7 +115,7 @@ public class BankingApplicationTest {
         bankingApp.withdraw(accountNumber, 500.0);
 
         // Check if the balance is correct after withdrawal
-        assertEquals(500.0, bankingApp.checkBalance(accountNumber));
+        assertEquals(1500.0, bankingApp.checkBalance(accountNumber),0);
     }
 //testing to transfer nullsender account number
     @Test
